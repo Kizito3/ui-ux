@@ -1,0 +1,53 @@
+.designflex {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 120px;
+}
+
+.designflex h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.designflex p {
+  color: var(--text-color);
+}
+
+.designImg img {
+  width: 100%;
+}
+
+.streamline h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 1024px) {
+  .designflex {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 60px;
+  }
+  .designflex p {
+    font-size: 1rem;
+  }
+  .designflex h2 {
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+  }
+  .streamline h1 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  .designImg img {
+    width: 100%;
+  }
+}

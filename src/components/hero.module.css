@@ -25,6 +25,7 @@
 
 .HeroContent button {
   background-color: var(--heading-color);
+  /* background-image: linear-gradient(to right, #16a3fe 0%, #23c99d 100%); */
   color: #fff;
   border: none;
   padding: 5px 34px;
@@ -75,5 +76,17 @@
   .innerheroflex {
     flex-direction: column;
     gap: 0.2rem;
+  }
+  .HeroContent button {
+    padding: 9px 55px;
+    font-size: 1.2rem;
+  }
+
+  .HeroContent p {
+    font-size: 1rem;
+  }
+
+  .innerhero p {
+    font-size: 1rem;
   }
 }

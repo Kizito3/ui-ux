@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./hero.module.css";
-import { heroData } from "../data/data";
+import { heroData, innerHero } from "../data/data";
 
 export default function Hero() {
   return (
@@ -18,20 +18,16 @@ export default function Hero() {
         </div>
       ))}
 
-      <div className={style.innerheroflex}>
-        <div className={style.innerhero}>
-          <p>
-            We specialize in user-centric design, enhancing mobile and web apps
-            with elegant interfaces and responsive layouts.
-          </p>
+      {innerHero.map((data, index) => (
+        <div className={style.innerheroflex} key={index}>
+          <div className={style.innerhero}>
+            <p>{data.text}</p>
+          </div>
+          <div className={style.innerhero}>
+            <p>{data.text2}</p>
+          </div>
         </div>
-        <div className={style.innerhero}>
-          <p>
-            We craft seamless design systems for scalable success and provide
-            strategic consulting for increased conversions.
-          </p>
-        </div>
-      </div>
+      ))}
     </>
   );
 }

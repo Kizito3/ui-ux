@@ -1,19 +1,17 @@
+import Design from "./components/Design";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Reliable from "./components/Reliable";
 
 function App() {
   return (
     <>
       <div className="container">
         <Navbar />
-        {/* <Hero
-          content="UI/UX design
-          subscription:
-          Elevate your
-          startup."
-        /> */}
         <Hero />
+        <Design />
+        <Reliable />
         <Footer />
       </div>
     </>
